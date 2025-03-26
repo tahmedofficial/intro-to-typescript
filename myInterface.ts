@@ -7,14 +7,24 @@ interface User {
     getCoupon(couponname: string): number;
 }
 
-const tanvir: User = {
+interface User {
+    githubToken: string;
+}
+
+interface Admin extends User {
+    role: "admin" | "ta" | "learner";
+}
+
+const tanvir: Admin = {
     dbId: 332,
     userId: 1234,
+    role: "admin",
     email: "tanvir@ahmed.com",
+    githubToken: "github",
     startTrail: () => {
         return "trail"
     },
-    getCoupon: (couponname: "tanvir") => {
+    getCoupon: (name: "tanvir") => {
         return 4
     }
 }

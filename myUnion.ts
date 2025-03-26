@@ -8,10 +8,10 @@ score = "d"
 //     id: number;
 // }
 
-type Admin = {
-    name: string;
-    id: number;
-}
+// type Admin = {
+//     name: string;
+//     id: number;
+// }
 
 // let tanvir: User = {
 //     name: "Tanvir",
