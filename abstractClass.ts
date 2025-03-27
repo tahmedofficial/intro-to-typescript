@@ -25,3 +25,5 @@ class Instagram extends TakePhoto {
 }
 
 const tanvir = new Instagram("test", "test", 8)
+
+export { }
