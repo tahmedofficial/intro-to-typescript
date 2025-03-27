@@ -15,7 +15,7 @@ interface Bootle {
     brand: string,
     type: number
 }
-
+// <>angular braket
 // identityThree<Bootle>({ brand: "", type: 4 })
 
 function getSearchProducts<Type>(products: Type[]): Type {
