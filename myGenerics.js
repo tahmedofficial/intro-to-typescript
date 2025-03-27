@@ -9,4 +9,12 @@ function identityThree(val) {
     return val;
 }
 identityThree("5");
-identityThree({ brand: "", type: 4 });
+// identityThree<Bootle>({ brand: "", type: 4 })
+function getSearchProducts(products) {
+    var myIndex = 3;
+    return products[myIndex];
+}
+var getMoreSearchProduct = function (products) {
+    var myIndex = 4;
+    return products[myIndex];
+};
