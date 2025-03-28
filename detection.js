@@ -25,3 +25,23 @@ function printAll(strs) {
         }
     }
 }
+function logValue(x) {
+    if (x instanceof Date) {
+        console.log(x.toUTCString());
+    }
+    else {
+        console.log(x.toUpperCase());
+    }
+}
+function isFish(pet) {
+    return pet.swim !== undefined;
+}
+function getFood(pet) {
+    if (isFish(pet)) {
+        return "Fish Food";
+    }
+    else {
+        return "Bird Food";
+    }
+}
+console.log("My valu", getFood({ swim: function () { } }));
