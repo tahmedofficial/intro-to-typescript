@@ -1,0 +1,10 @@
+"use strict";
+let firstName = "Tanvir Ahmed";
+let roll = 242;
+let isAdmin = true;
+let x = undefined;
+let y = null;
+let d;
+d = 34;
+let friends = ["Ornee", "Tanvir", "Mohammad", "Humayra"];
+let ageName = [26, "Tanvir Ahmed"];
