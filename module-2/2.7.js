@@ -1,6 +1,6 @@
 "use strict";
 {
-    const person = "car";
+    const person = "bike";
     const user = {
         name: "Tanvir Ahmed",
         age: 25,
