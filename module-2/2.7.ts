@@ -9,7 +9,7 @@
     type Owner = "bike" | "car" | "ship";
     type Owner2 = keyof Vehicle;
 
-    const person: Owner2 = "car";
+    const person: Owner2 = "bike";
 
     type User = {
         name: string;
