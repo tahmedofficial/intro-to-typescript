@@ -1,18 +1,16 @@
 "use strict";
 {
     class Counter {
-        constructor() {
-            this.count = 0;
+        static increment() {
+            return Counter.count = Counter.count + 1;
         }
-        increment() {
-            return this.count = this.count + 1;
-        }
-        decrement() {
-            return this.count = this.count - 1;
+        static decrement() {
+            return Counter.count = Counter.count - 1;
         }
     }
-    const instance1 = new Counter();
-    console.log(instance1.increment());
-    const instance2 = new Counter();
-    console.log(instance2.increment());
+    Counter.count = 0;
+    // const instance1 = new Counter();
+    console.log(Counter.increment());
+    // const instance2 = new Counter();
+    console.log(Counter.increment());
 }
