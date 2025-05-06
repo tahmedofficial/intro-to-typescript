@@ -23,9 +23,21 @@
 
         if ("role" in user) {
             console.log(`My name ${user.name} and my role is ${user.role}`);
+        } else {
+            console.log(`My name ${user.name}`);
         }
     }
 
+    const normalUser: NormalUser = {
+        name: "Normal User"
+    }
+
+    const adminUser: AdminUser = {
+        name: "Admin User",
+        role: "admin"
+    }
+
+    getUser(normalUser)
 
 
 
