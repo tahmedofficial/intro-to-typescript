@@ -25,11 +25,17 @@
             console.log("I am meaw");
         }
     }
+    const isDog = (animal) => {
+        return animal instanceof Dog;
+    };
+    const isCat = (animal) => {
+        return animal instanceof Cat;
+    };
     const getAnimal = (animal) => {
-        if (animal instanceof Dog) {
+        if (isDog(animal)) {
             animal.makeBarking();
         }
-        else if (animal instanceof Cat) {
+        else if (isCat(animal)) {
             animal.makeMeaw();
         }
         else {
